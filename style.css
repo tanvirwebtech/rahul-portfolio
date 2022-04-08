@@ -141,12 +141,11 @@ header {
         display: inline-block;
     }
     .logo {
-        margin-left: -65%;
+        margin-left: -50%;
     }
     .menu {
         width: 100%;
         height: auto;
-
         margin-right: 0;
     }
     .menu ul {
@@ -167,7 +166,7 @@ header {
         padding: 10px 0px 10px 5%;
     }
     .menu-icon {
-        width: 100px;
+        width: 60px;
         height: inherit;
         display: block;
         position: absolute;
@@ -272,7 +271,7 @@ header {
         line-height: 1.3em;
         margin: 8px auto;
     }
-    #name {
+    #my-name {
         font-size: 1.6rem;
         text-transform: uppercase;
     }
