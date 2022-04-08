@@ -347,7 +347,7 @@ progress::-webkit-progress-value {
 }
 
 progress::-webkit-progress-bar {
-    background: rgb(22, 18, 54);
+    background: transparent;
 }
 .skill {
     margin: 20px 0;
