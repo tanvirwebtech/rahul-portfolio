@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rahul Ahmed Sezan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="./index.html">My Portfolio</a>
+            </div>
+            <nav class="menu">
+                <input type="checkbox" id="menuToggle" />
+                <label for="menuToggle" class="menu-icon">
+                    <!-- <div class="menu-icon-bar"> -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </label>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./sitereport.html">Site Report</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="site-heading wrap">
+                <div class="container">
+                    <h1 class="site-heading">Contact Me</h1>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <div class="container">
+                    <div class="contact-wrap">
+                        <div class="contact-form">
+                            <form>
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required
+                                />
+                                <label for="email">Email</label>
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    required
+                                />
+                                <label for="msg">Message</label>
+                                <textarea
+                                    type="text"
+                                    name="msg"
+                                    id="msg"
+                                    required
+                                ></textarea>
+
+                                <div class="submit-button">
+                                    <button
+                                        type="submit"
+                                        name="submit"
+                                        id="contact-submit"
+                                    >
+                                        Submit
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-phone-alt"></i> Phone: +1 457
+                                36484
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope"></i> Email:
+                                contact.jhon@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> Location:
+                            </p>
+                            <address>
+                                32/a Stadium road, North Wales, California
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <p class="foooter-text">&copy; All right reserved to Site Owner</p>
+        </footer>
+        <script
+            src="https://kit.fontawesome.com/812c1bc08f.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

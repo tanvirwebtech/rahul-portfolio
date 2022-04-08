@@ -1,0 +1,653 @@
+/*///// Common CSS //// */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    color: #eee;
+    background-color: #120e1d;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    width: 93%;
+    margin: 0 auto;
+}
+.site-heading {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+.section-heading {
+    color: #120e1d;
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+#footer {
+    padding: 20px 0;
+}
+#footer p {
+    text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .section-heading {
+        text-align: center;
+        font-size: 2rem;
+        margin: 15px 0;
+    }
+    .site-heading {
+        margin-top: 70px;
+        text-align: center;
+        font-size: 3.6rem;
+        padding-bottom: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-heading {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 10px 0;
+    }
+    .site-heading {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    #footer p {
+        font-size: 14px;
+    }
+}
+
+/*/ //// Common CSS End //// */
+
+/* Header CSS  */
+.icon-bar {
+    width: 35px;
+    height: 5px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+}
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #120e1d;
+}
+.logo {
+    margin: 0 0 0 5%;
+}
+.logo a {
+    color: #eee;
+}
+
+/* MENU CSS */
+.menu {
+    width: 60%;
+    height: 100%;
+    margin-right: 3%;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.menu ul li {
+    width: 20%;
+    height: inherit;
+    color: #eee;
+    display: inline-block;
+}
+.menu ul li a {
+    height: inherit;
+    color: #eee;
+    display: inline-block;
+}
+.menu ul li a:hover {
+    background-color: #eee;
+    color: #120e1d;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+/* ------ Responsive Menu ------- */
+
+@media screen and (max-width: 767.5px) {
+    header {
+        display: inline-block;
+    }
+    .logo {
+        margin-left: -65%;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+
+        margin-right: 0;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+    }
+    .menu ul li {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #120e1d;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+    }
+}
+
+/* ///// Header CSS End ////// */
+
+/* Welcome Section CSS */
+.welcome-section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.welcome-notes {
+    text-align: center;
+}
+.welcome-notes h1 {
+    font-size: 3.6rem;
+}
+.welcome-desc {
+    width: 70%;
+    line-height: 1.5em;
+    margin: 10px auto;
+}
+#my-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.welcome-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.download-resume-btn,
+#contact-submit {
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.3s all;
+}
+.download-resume-btn:hover,
+#contact-submit:hover {
+    border: 1px solid #120e1d;
+    background-color: #eee;
+    color: #120e1d;
+    cursor: pointer;
+}
+
+/* Responsive Welcome  */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .welcome-section {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 570.5px) and (max-width: 768px) {
+    .welcome-section {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    .welcome-notes h1 {
+        font-size: 2.6rem;
+    }
+    .welcome-desc {
+        width: 80%;
+        line-height: 1.5em;
+        margin: 10px auto;
+    }
+    #name {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 570.5px) {
+    .welcome-section {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    .welcome-tagline {
+        font-size: 12px;
+    }
+    .welcome-notes h1 {
+        font-size: 1.6rem;
+    }
+    .welcome-desc {
+        font-size: 12px;
+        width: 90%;
+        line-height: 1.3em;
+        margin: 8px auto;
+    }
+    #name {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+    .download-resume-btn {
+        padding: 5px 10px;
+        border: 1px solid #eee;
+        font-size: 12px;
+        transition: 0.3s all;
+    }
+}
+
+/* About Section CSS */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #120e1d;
+}
+.about-image {
+    text-align: center;
+}
+.about-image img {
+    width: 60%;
+}
+.about-desc {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/* Responsive About  */
+@media screen and (max-width: 570.5px) {
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: #120e1d;
+    }
+    .about-desc p {
+        text-align: center;
+    }
+    .about-image img {
+        width: 70%;
+    }
+}
+
+/* Skills CSS  */
+
+#skills {
+    padding: 50px 0;
+}
+progress {
+    width: 70%;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+progress::-moz-progress-bar {
+    background: lightblue;
+    border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 8px;
+    background: rgb(0, 183, 255);
+}
+
+progress::-webkit-progress-bar {
+    background: rgb(22, 18, 54);
+}
+.skill {
+    margin: 20px 0;
+}
+.section-heading.white {
+    color: #eee;
+}
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Responsive Skills  */
+@media screen and (max-width: 570.5px) {
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* #####//// BLOG CSS ////##### */
+
+.blog {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 400px;
+}
+.blog-info {
+    padding-bottom: 20px;
+}
+.blog-info span {
+    margin: 10px 8px 15px;
+    color: #b6b6b6;
+    font-size: 12px;
+}
+.blog-info span:first-child {
+    margin-left: 0;
+}
+.blog-content {
+    width: 80%;
+}
+.blog-body {
+    padding-top: 20px;
+    background-color: #141e2c;
+}
+.blog-title {
+    font-size: 3.2rem;
+}
+.side-bar-heading {
+    text-align: center;
+}
+.side-bar {
+    border-left: 1px solid #304563;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.square {
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.mask {
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+}
+
+.square img {
+    width: 100%;
+}
+
+.square .card-title {
+    margin: auto;
+    text-align: left;
+
+    padding: 10px;
+    color: #120e1d;
+    font-size: 24px;
+}
+.square p {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    color: #120e1d;
+    line-height: 18px;
+}
+.read-more-btn {
+    text-align: center;
+    padding: 20px 0;
+}
+.button {
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #120e1d;
+    color: #120e1d;
+    transition: 0.3s all;
+}
+.button:hover {
+    border: 1px solid #120e1d;
+    background-color: #120e1d;
+    color: #eee;
+    cursor: pointer;
+}
+.divider {
+    display: none;
+    margin: 30px 0;
+}
+
+/* Responsive Blog  */
+@media screen and (min-width: 570.5px) and (max-width: 768px) {
+    .blog {
+        grid-gap: 10px;
+        grid-template-columns: 1fr 300px;
+    }
+    .blog-title {
+        font-size: 2.2rem;
+    }
+    .blog-content {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 570.5px) {
+    .blog {
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    .side-bar {
+        border-left: 0;
+    }
+    .blog-title {
+        font-size: 1.6rem;
+    }
+    .blog-content {
+        width: 100%;
+        font-size: 15px;
+    }
+    .divider {
+        display: block;
+    }
+}
+
+/* #####//// CONTACT CSS ////##### */
+
+.contact-section {
+    background-color: #141e2c;
+    padding: 30px 0;
+}
+.contact-wrap {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+input,
+textarea {
+    width: 70%;
+    height: 30px;
+    margin: 10px 0;
+    display: flex;
+}
+textarea {
+    height: 60px;
+}
+.submit-button {
+    width: 70%;
+    text-align: center;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Responsive Contact  */
+@media screen and (max-width: 570.5px) {
+    .contact-wrap {
+        grid-template-columns: 1fr;
+    }
+    .contact-form form {
+        text-align: center;
+    }
+    .contact-form form input,
+    textarea {
+        margin: 0 auto;
+    }
+    .submit-button {
+        margin: 0 auto;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+
+/* #####//// Portfolio CSS ////##### */
+
+.portfolio-body {
+    background-color: #d9f3ff;
+}
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+.square.work {
+    position: relative;
+    transition: 0.3s all;
+    display: flex;
+}
+.square.work:hover .card-info {
+    display: block;
+}
+.card-container.work {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+.card-info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 238, 238, 0.877);
+    display: none;
+    position: absolute;
+    /* padding: 10px; */
+    top: 0;
+    left: 0;
+    z-index: 978878;
+}
+.card-info ul li {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #120e1d;
+}
+.card-info ul li:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+.section-heading.work {
+    text-align: left;
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+/* Responsive Portfolio  */
+
+@media screen and (max-width: 768px) {
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-heading.work {
+        padding-top: 20px;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 570.5px) {
+    .works {
+        grid-template-columns: 1fr;
+    }
+    .card-info ul li {
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        color: #120e1d;
+    }
+    .card-info ul li:first-child {
+        font-size: 16px;
+    }
+}
+
+/* Site Report CSS */
+.site-report-body {
+    background-color: #141e2c;
+    padding: 30px 0;
+}
+.site-report-heading {
+    display: inline-block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+/* Resposive Site Report */
+@media screen and (max-width: 570.5px) {
+    .site-report-heading {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #eee;
+    }
+    .site-report p {
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+/* /// END CSS /// */
